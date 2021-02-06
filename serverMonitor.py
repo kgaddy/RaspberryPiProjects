@@ -22,11 +22,8 @@ while True:
    for hostnum, hostname in enumerate(hostlist):
       response = os.system("ping -c 1 -w2 " + hostname + " > /dev/null 2>&1")
       if response == 0:
-#         print hostnum, ' - ', hostid[hostnum], 'is up!'
          set_pixel(hostnum, 0, 0, 255)
       else:
-#         print hostnum, ' - ', hostid[hostnum], 'is down!'
-#         set_brightness(0.4)
           set_pixel(hostnum, 255, 0, 0)
    show()
    sleep(60)
