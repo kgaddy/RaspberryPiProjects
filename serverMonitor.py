@@ -6,7 +6,7 @@ hostlist = ["192.168.1.1", "192.168.1.2", "192.168.1.3", "192.168.1.4", "192.168
 hostid = ["Device1", "Device2", "Device3", "Device4", "Device5", "Device6", "Device7", "Device8"]
 
 clear()
-set_brightness(0.05)
+set_brightness(0.50)
 set_all(0,0,255)
 show()
 sleep(5)
